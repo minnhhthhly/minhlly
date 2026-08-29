@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML form</h2>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="doe" value="doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+<form action="form_action.asp" method="get">
+    First name: <input type="text" name="fname" value="Mouse"/><br/>
+    Last name: <input type="text" name="lname" value="Cat"/><br/>
+    <input type="submit" value="Submit">
+</form>
+<textarea rows="2" cols="20">
+   The cat was playing in the garden. suddenly it ran into a tree and fell down. The cat was hurt and it cried loudly. The cat's owner heard the cry and came to help the cat. The owner took the cat to the vet and the vet treated the cat's injuries. The cat recovered and was happy again.
+</textarea><br><br>
+username: 
+<input type="text" name="username"><br>
+password: 
+<input type="password" name="password"><br><br>
+<input type="submit" value="submit"/>
+<input type="reset" value="reset"/>
+  
+||<form action="#" method="" name=""><br>
+    <input name="myfile" type="file" >
+    <intput type="submit" value="submit"/>
+</form>
+||<h2>THÔNG TIN SINH VIÊN</h2>
+
+<form>
+    Mã SV:
+   <input type="text" name="masv"><br>  
+   Tên sv:
+   <input type="text" name="tensv"><br>
+   lớp:
+   <input type="text" name="lop"><br>
+   giới tính:
+   <input type="radio" name="gioitinh" value="nam">Nam
+   <input type="radio" name="gioitinh" value="nữ">Nữ<br>
+   email:
+   <input type="email" name="email"><br>
+   sđt:
+   <input type="text"name="sđt"><br>
+   cccd:
+   <input type="text"name="cccd"><br>
+</form>
+ </body>
+ <head>
+    <meta charset="UTF-8">
+    <title>Đăng ký hội thảo</title>
+
+    <style>
+        body 
+        
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid rgb(84, 84, 84);
+        }
+
+        th {
+            background-color: #9dccf0;
+            padding: 12px;
+            font-size: 20px;
+        }
+
+        td {
+            border: 1px solid #888;
+            padding: 7px;
+        }
+
+        .label {
+            width: 38%;
+            font-weight: bold;
+        }
+
+        .blue {
+            background-color: #e0f0fc;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 95%;
+            padding: 3px;
+        }
+
+        textarea {
+            width: 95%;
+            height: 70px;
+        }
+
+        .button {
+            text-align: center;
+            background-color: #9dccf0;
+        }
+
+        input[type="submit"] {
+            padding: 4px 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <form>
+
+        <table>
+
+            <tr>
+                <th colspan="2">
+                    Biểu mẫu đăng ký hội thảo công nghệ
+                </th>
+            </tr>
+
+            <tr class="blue">
+                <td class="label">
+                    Họ tên
+                </td>
+                <td>
+                    <input type="text"
+                           name="hoten"
+                           placeholder="Nhập tên của bạn">
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    Email
+                </td>
+                <td>
+                    <input type="email"
+                           name="email"
+                           placeholder="Nhập email">
+                </td>
+            </tr>
+            <tr>    
+                <td class="label">
+                    Số điện thoại
+                </td>
+                <td>
+                    <input type="number"
+                           name="sdt"
+                            placeholder="Nhập số điện thoại">
+                </td>
+            </tr>
+
+            <tr class="blue">
+                <td class="label">
+                    Chủ đề bạn quan tâm
+                </td>
+                <td>
+                    <select name="chude">
+                        <option>Trí tuệ nhân tạo</option>
+                        <option>Lập trình Web</option>
+                        <option>An toàn thông tin</option>
+                        <option>Công nghệ phần mềm</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    Bạn đã tham gia hội thảo trước đây chưa?
+                </td>
+                <td>
+                    <input type="radio"
+                           name="thamgia"
+                           value="co">
+                    Có
+
+                    <input type="radio"
+                           name="thamgia"
+                           value="chua">
+                    Chưa
+                </td>
+            </tr>
+
+            <tr class="blue">
+                <td class="label">
+                    Thời gian bạn có thể tham dự
+                </td>
+                <td>
+                    <input type="checkbox"
+                           name="thoigian"
+                           value="sang">
+                    Sáng
+
+                    <input type="checkbox"
+                           name="thoigian"
+                           value="chieu">
+                    Chiều
+
+                    <input type="checkbox"
+                           name="thoigian"
+                           value="toi">
+                    Tối
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    Câu hỏi dành cho diễn giả
+                </td>
+                <td>
+                    <textarea name="cauhoi"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="button">
+                    <input type="submit" value="Đăng ký">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</div>
+
+</body><head>
+    <meta charset="UTF-8">
+    <title>Khảo sát đăng ký</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman";
+        }
+
+        .khung {
+            width: 460px;
+            margin: 75px auto;
+            background-color: #dcecf8;
+            border: 2px solid #555;
+        }
+
+        .tieude {
+            background-color: #91c5ed;
+            text-align: center;
+            padding: 28px 5px;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        fieldset {
+            margin: 14px 10px;
+            padding: 12px 18px;
+            border: 1px solid #999;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .dong {
+            margin: 8px 0;
+        }
+
+        .dong label {
+            display: inline-block;
+            width: 165px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            width: 215px;
+            height: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="date"] {
+            width: 110px;
+            height: 22px;
+        }
+
+        select {
+            width: 80px;
+            height: 24px;
+        }
+
+        .nut {
+            background-color: #91c5ed;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .nut input {
+            margin: 0 3px;
+            padding: 4px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="khung">
+
+    <div class="tieude">
+        Khảo sát đăng ký tài khoản thành viên
+    </div>
+
+    <form>
+
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+
+            <div class="dong">
+                <label>Họ tên:</label>
+                <input type="text" name="hoten">
+            </div>
+
+            <div class="dong">
+                <label>Email:</label>
+                <input type="email" name="email">
+            </div>
+
+            <div class="dong">
+                <label>Số điện thoại:</label>
+                <input type="tel" name="sdt">
+            </div>
+
+            <div class="dong">
+                <label>Ngày sinh:</label>
+                <input type="date" name="ngaysinh">
+            </div>
+
+            <div class="dong">
+                <label>Mật khẩu:</label>
+                <input type="password" name="matkhau">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Tùy chọn tài khoản</legend>
+
+            <div class="dong">
+                <label>Chọn gói thành viên:</label>
+
+                <select name="goi">
+                    <option>Miễn phí</option>
+                    <option>Cơ bản</option>
+                    <option>Cao cấp</option>
+                </select>
+            </div>
+
+            <div class="dong">
+                <label>Tải ảnh đại diện:</label>
+                <input type="file" name="anh">
+            </div>
+
+        </fieldset>
+
+        <div class="nut">
+            <input type="submit" value="Đăng ký">
+            <input type="reset" value="Nhập lại">
+        </div>
+
+    </form>
+
+</div>
+
+</body><head>
+    <meta charset="UTF-8">
+    <title>HYBID - Chi tiết sản phẩm</title>
+</head>
+
+<body>
+
+
+<table width="100%" border="0" cellpadding="15">
+    <tr>
+        <td width="20%">
+            <font size="5"><b>HYBID</b></font>
+        </td>
+
+        <td width="50%" align="center">
+            <a href="#">Trang chủ</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="#">Giới thiệu</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="#">Sản phẩm</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="#">Tin tức</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="#">Liên hệ</a>
+        </td>
+
+        <td width="30%" align="right">
+             &nbsp;&nbsp;  &nbsp;&nbsp; 🛒
+        </td>
+    </tr>
+</table>
+
+<hr>
+<table width="90%" align="center" border="0" cellpadding="10">
+    <tr>
+
+        
+        <td width="55%" valign="top">
+
+            <table border="0" cellpadding="10">
+                <tr>
+                    
+                    
+                    <td align="center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm6QTRS74yIlbJoXwv5foOzdZtLYKz7vGi0HLsr8Qceg&s=10"
+                             width="450" height="550"
+                             alt="Áo T-Shirt">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+           
+        </td>
+
+        
+        <td width="45%" valign="top">
+
+            <h1>
+                Áo T-Shirt Cotton 
+                Logo Thêu Chỉ Xin Cao Cấp Bóng Mịn
+            </h1>
+
+            <p>
+                Thương hiệu:
+                <a href="#">HYBID®</a>
+                &nbsp;&nbsp;
+                Mã sản phẩm:
+                <a href="#">TShirt_color</a>
+            </p>
+
+            <h2>
+                <font color="red">239.000đ</font>
+                &nbsp;
+                <del>390.000đ</del>
+            </h2>
+<p>
+    <b>Kích thước:</b>
+
+    <select name="size">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+    </select>
+</p>
+        <p>
+    <b>Số lượng:</b>
+</p>
+
+<button type="button" onclick="giam()">−</button>
+
+<input type="text" id="soluong" value="1" size="3" readonly>
+
+<button type="button" onclick="tang()">+</button>
+
+<script>
+function tang() {
+    var sl = document.getElementById("soluong");
+    sl.value = parseInt(sl.value) + 1;
+}
+
+function giam() {
+    var sl = document.getElementById("soluong");
+
+    if (parseInt(sl.value) > 1) {
+        sl.value = parseInt(sl.value) - 1;
+    }
+}
+</script>
+
+            <br><br>
+
+            <input type="button"
+                   value="THÊM VÀO GIỎ"
+                   size="40">
+
+            <br><br>
+
+            <input type="button"
+                   value="MUA NGAY"
+                   size="40">
+
+        </td>
+
+    </tr>
+</table>
+
+<hr>
+
+
+<table width="90%" align="center" border="1" cellpadding="15">
+    <tr>
+        <td>
+            <h2>MÔ TẢ SẢN PHẨM</h2>
+
+            <p>
+                Áo T-Shirt Cotton  được thiết kế theo phong cách
+                Oversized hiện đại.
+            </p>
+
+            <p>
+                Chất liệu cotton cao cấp, mềm mại và thoải mái khi mặc.
+            </p>
+
+            <p>
+                Sản phẩm phù hợp sử dụng hằng ngày.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+
+
+</body>
+</html>
